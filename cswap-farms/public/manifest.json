@@ -1,0 +1,16 @@
+{
+  "short_name": "CryptoSwap Finance",
+  "name": "CryptoSwap Finance",
+  "description": "Farm LOLI and earn USD-C!",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#123123",
+  "background_color": "#123123"
+}
