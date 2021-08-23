@@ -1,2 +1,0 @@
-# testfarm
-farm script test
