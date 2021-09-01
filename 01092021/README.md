@@ -50,3 +50,30 @@ ou si ça ne fonctionne pas utilisé yarn
 pour tester en local tout en remetant l'environement à zero il faut utiliser la commande
 
 `truffle migrate --reset`
+
+## Erreur encore présente après la compilation
+
+`,Warning: This declaration shadows an existing declaration.
+   --> project:/contracts/MasterChefV2_flat.sol:813:17:
+    |
+813 |     constructor(string memory name, string memory symbol) {
+    |                 ^^^^^^^^^^^^^^^^^^
+Note: The shadowed declaration is here:
+   --> project:/contracts/MasterChefV2_flat.sol:829:5:`
+   
+   Si vous comparez ce fichier MasterchefV2, vous verrez que j'ai déja corriger des erreurs sur les contructor visiblement leur manière de les définir evolue dans le temps avec les nouvelles versions de solidity il faut modifier la façon de renseigner mais là je ne vois pas bien comment, je vois juste qu'il dissimulent d'autres variables.
+   
+   je n'ai pas eu le temps de me pencher sur les deux erreurs suivantes
+   
+   `TypeError: Return argument type address is not implicitly convertible to expected type (type of first return variable) address payable.
+   --> project:/contracts/MasterChefV2_flat.sol:604:16:
+    |
+604 |         return msg.sender;
+    |                ^^^^^^^^^^
+
+,TypeError: Member "sub" not found or not visible after argument-dependent lookup in uint256.
+    --> project:/contracts/MasterChefV2_flat.sol:1256:37:
+     |
+1256 |                 uint256 srcRepNew = srcRepOld.sub(amount);
+     |                                     ^^^^^^^^^^^^^
+`
