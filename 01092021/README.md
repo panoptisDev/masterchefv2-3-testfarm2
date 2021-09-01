@@ -17,7 +17,7 @@ La suite présuppose que vous utilisez `node@>=10` and Truffle Suite.
 
 `npm install`
 
-#### si vous avez des erreurs installer aussi 
+si vous avez des erreurs installer aussi 
 
 `npm install truffle`
 
@@ -25,7 +25,7 @@ La suite présuppose que vous utilisez `node@>=10` and Truffle Suite.
 
 `npm install @openzeppelin/contracts`
 
-#### ou si ça ne fonctionne pas utilisé yarn
+ou si ça ne fonctionne pas utilisé yarn
 
 `yarn`
 
@@ -47,6 +47,6 @@ La suite présuppose que vous utilisez `node@>=10` and Truffle Suite.
 `truffle migrate --network development/testnet/bsc`
 
 
-#### pour tester en local tout en remetant l'environement à zero il faut utiliser la commande
+pour tester en local tout en remetant l'environement à zero il faut utiliser la commande
 
 `truffle migrate --reset`
