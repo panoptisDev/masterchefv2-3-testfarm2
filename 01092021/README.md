@@ -1,4 +1,4 @@
-# CSWAP Contracts
+# TESTFARM Contracts
 
 MasterChef
 [0xda237a2b663aba41747e471a1e001d2463867969](https://explorer-mainnet.maticvigil.com/address/0xda237a2b663aba41747e471a1e001d2463867969)
@@ -16,6 +16,18 @@ The following assumes the use of `node@>=10` and Truffle Suite.
 ## Install Dependencies
 
 `npm install`
+
+### si vous avez des erreurs installer aussi 
+
+`npm install truffle`
+
+`npm install truffle-hdwallet-provider`
+
+`npm install @openzeppelin/contracts`
+
+### ou si ça ne fonctionne pas utilisé yarn
+
+`yarn`
 
 ## Add wallet
 
