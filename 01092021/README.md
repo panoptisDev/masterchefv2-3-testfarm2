@@ -13,7 +13,7 @@ Timelock
 
 La suite présuppose que vous utilisez `node@>=10` and Truffle Suite.
 
-## installez les dépendances
+## Installez les dépendances
 
 `npm install`
 
@@ -42,7 +42,7 @@ ou si ça ne fonctionne pas utilisé yarn
 
 `truffle compile`
 
-## exécuter le déploiement sur la blockchain
+## Exécuter le déploiement sur la blockchain
 
 `truffle migrate --network development/testnet/bsc`
 
