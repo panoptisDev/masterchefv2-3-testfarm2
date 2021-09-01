@@ -9,11 +9,11 @@ CSWAP Token
 Timelock
 [0xDF4aCdF70347E64AFFbEA9cCc21B21e0c11041a5](https://explorer-mainnet.maticvigil.com/address/0xDF4aCdF70347E64AFFbEA9cCc21B21e0c11041a5)
 
-# Local Development
+# Développement local
 
-The following assumes the use of `node@>=10` and Truffle Suite.
+La suite présuppose que vous utilisez `node@>=10` and Truffle Suite.
 
-## Install Dependencies
+## installez les dépendances
 
 `npm install`
 
@@ -29,14 +29,24 @@ The following assumes the use of `node@>=10` and Truffle Suite.
 
 `yarn`
 
-## Add wallet
+## Ajoutez un portefeuille
 
 `add file named .secret to root dir containing mnumonic (DO NOT CHECK IN)`
 
-## Compile Contracts
+
+## Lancez l'environnement de développement de truffle
+
+`truffle develop`
+
+## Compilez les  contracts
 
 `truffle compile`
 
-## Run Deployment
+## exécuter le déploiement sur la blockchain
 
 `truffle migrate --network development/testnet/bsc`
+
+
+### pour tester en local tout en remetant l'environement à zero il faut utiliser la commande
+
+`truffle migrate --reset`
