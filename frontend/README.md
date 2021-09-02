@@ -63,4 +63,4 @@ Les éléments de traduction peuvent gérer des variables transmises dans Crowdi
 
 Cela ne fonctionnera seulement s'il n'y a qu'**une** variable transmise, et si cette variable  est enveloppé dans Crowdin avec les signes **%**, i.e.:
 
-Traduction dans Crowdin: `%asset% Earned` [link](https://crowdin.com/translate/pancakeswap/8/en-de#330)
+Traduction dans Crowdin: `%asset% Earned` [lien](https://crowdin.com/translate/pancakeswap/8/en-de#330)
