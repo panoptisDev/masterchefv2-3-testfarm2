@@ -6,47 +6,45 @@
 
 Le Readme est basé sur celui du Pancake Frontend, le contribution guidelines du Frontend est [ici](https://docs.pancakeswap.finance/code/contributing).
 
-## Setup
+## Installation
 
-Create a `.env.development.local` file at the root of the project. Add the following lines inside :
+Créer un fichier `.env.development.local` dans le dossier frontend. rajouter se contenu dedans :
 
 ```
 REACT_APP_CROWDIN_APIKEY = ""
 REACT_APP_CROWDIN_PROJECTID = ""
 ```
 
-You'll need this in order to get the i18n system to work. Contact a dev if you need these values.
-
-Install the dependencies
+Installez les dépendances
 
 ```shell
 yarn
 yarn start
 ```
 
-Don't forget to setup your IDE with `eslint` and `prettier`.
+Ne pas oublier de configurer son IDE avec `eslint` et `prettier`.
 
-## Projet structure
+## Structure du projet
 
-- **components** contains generic components used inside the application.
-- **views** contains building blocks for each page. The entry point of a view is used as the root component of each route.
-- **config** contains all the config files and ABIs.
-- **state** contains the redux files for the global state of the app.
-- **context** contains global contexts (separated from the redux store)
-- **hooks** contains generic hooks.
-- **utils** contains generic utilities functions.
+- **components** contient des éléments générique utilisé au sein de l'application.
+- **views** contient des blocs de construction pour chaque page. Le point d'entrée d'une vue est utilisé comme **components** source pour chaque route.
+- **config** contient tout les fichiers de configs et ABIs.
+- **state** contient les fichiers redux pour l'état global de l'application.
+- **context** contient les contextes globaux. (séparé du store redux)
+- **hooks** contient des hooks génériques.
+- **utils** contient des fonctions pour des services générique.
 
 ## Tests
 
-Run tests with `yarn test`.
+Lancez des tests avec `yarn test`.
 
 ## Localisation
 
-_In order for the Crowdin API queries to work - you will need `REACT_APP_CROWDIN_APIKEY` & `REACT_APP_CROWDIN_PROJECTID` env variables set in your root `.env.development.local` file_
+_Afin que les requêtes **Crowdin API** fonctionne - il est necessaire de renseigner ces variable dans le fichier  `.env.development.local` du dossier frontend `REACT_APP_CROWDIN_APIKEY` & `REACT_APP_CROWDIN_PROJECTID`_
 
-### Adding translations
+### Ajout de traduction
 
-A hook expose the function you need to translate content.
+Ce **hook** expose une fonction,vous devez en traduie le contenu.
 
 ```
 import useI18n from 'hooks/useI18n'
@@ -56,13 +54,13 @@ const TranslateString = useI18n()
 TranslateString(id, 'fallback')
 ```
 
-- **id** is the crowdin id of the string you want to translate.
-- **fallback** is a string fallback used if the id cannot be found.
+- **id** est le crowdin id de la chaine que vous voulez traduire
+- **fallback** est la chaine de secours si la chaine en question n'est pas trouvée.
 
 ### Variables
 
-The translation component can handle variables being passed in from Crowdin, with no code changes.
+Les éléments de traduction peuvent gérer des variables transmises dans Crowdin, et ce sans altération du code.
 
-It will only work if there is only **one** variable passed in, and if that variable within Crowdin is wrapped in **%** signs, i.e.:
+Cela ne fonctionnera seulement s'il n'y a qu'**une** variable transmise, et si cette variable  est enveloppé dans Crowdin avec les signes **%**, i.e.:
 
-Translation in crowdin: `%asset% Earned` [link](https://crowdin.com/translate/pancakeswap/8/en-de#330)
+Traduction dans Crowdin: `%asset% Earned` [link](https://crowdin.com/translate/pancakeswap/8/en-de#330)
