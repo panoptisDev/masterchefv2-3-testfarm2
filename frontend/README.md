@@ -4,7 +4,7 @@
 
 # Contributing to the Pancake ecosystem 🥞
 
-Le Readme est basé sur celui du Pancake Frontend, le contribution guidelines du Frontend est ici [Contribution guidelines](https://docs.pancakeswap.finance/code/contributing).
+Le Readme est basé sur celui du Pancake Frontend, le contribution guidelines du Frontend est [ici](https://docs.pancakeswap.finance/code/contributing).
 
 ## Setup
 
