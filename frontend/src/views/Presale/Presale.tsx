@@ -77,7 +77,7 @@ const Presale: React.FC = () => {
         <>
         <Hero>
             <StyleHeading as="h1" size="xl" mb="24px" color="prinmary">
-               CSwap Presale
+               LOLI Presale
             </StyleHeading>
         </Hero>
         <StyledPage>
