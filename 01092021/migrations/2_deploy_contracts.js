@@ -10,7 +10,7 @@ module.exports = function (deployer, network, accounts) {
     deployer.then(async () => {
         try {
             // DEPLOY token and timelock
-            await deployer.deploy(Timelock, DEV, 172800);
+            await deployer.deploy(Timelock, DEV, 86400); //24 hours
             await deployer.deploy(Token);
             
             // const TimelockInstance = await Timelock.deployed(); console.log(`TimelockInstance: ${TimelockInstance.address}`);
